@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 420px;
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 100, 0, 0.3);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+input[type="file"] {
+  width: 100%;
+  margin-top: 15px;
+  padding: 8px;
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+  border-radius: 6px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: #f97316;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #fb923c;
+}
+
+.or {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: #020617;
+  border: 1px solid #f97316;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+#backBtn {
+  background: #334155;
+  color: white;
+}
+
+#backBtn:hover {
+  background: #475569;
+}
+#output {
+  max-height: 55vh;
+  overflow-y: auto;
+  margin-top: 20px;     /* 🔥 IMPORTANT */
+  padding: 16px;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+}
+
+
+/* Optional: smoother scrollbar (Chrome / Edge) */
+#output::-webkit-scrollbar {
+  width: 6px;
+}
+
+#output::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+#output::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 10px;
+}

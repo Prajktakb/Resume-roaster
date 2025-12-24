@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Roast Bot 🔥</title>
+
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container" id="page1">
+    <h1>🔥 Resume Roast Bot</h1>
+    <p class="subtitle">Upload your resume PDF & get roasted politely 😅</p>
+
+    <input type="file" id="pdfUpload" accept="application/pdf" />
+
+    <p class="or">OR</p>
+
+    <textarea id="resumeInput"
+      placeholder="Paste your resume text here (optional)..."></textarea>
+
+    <button id="roastBtn">Roast My Resume 🔥</button>
+  </div>
+
+  <div class="container hidden" id="page2">
+    <h2>🔥 Roast Result</h2>
+    <pre id="output"></pre>
+    <button id="backBtn">⬅ Back</button>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
